@@ -20,5 +20,11 @@ public class hpManager : MonoBehaviour
       // 2P
       hpBar[1].fillAmount -= 0.001f;
     }
+    if (boxerState.GetBoxerState1.IsName("Base Layer.LeftPunch")
+      && boxerState.GetBoxerState2.IsName("Base Layer.Idle"))
+    {
+      // 2P
+      hpBar[1].fillAmount -= 0.001f;
+    }
   }
 }
